@@ -16,7 +16,6 @@ if (mb_strlen($pass) < 2 || mb_strlen($pass) > 25) {
     echo "Недопустимая длина пароля (от 2 до 25 символов)";
     exit();
 }
-$pass = md5($pass . 'fdgmkdfpg123');
 $mysql = new mysqli('localhost', 'root', '', 'register-bd');
 $mysql->query("INSERT INTO `user` (`login`, `name`, `pass`) 
 VALUES ('$login','$name','$pass')");

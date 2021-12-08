@@ -1,3 +1,47 @@
-form{
-    width: 500px;
+body{
+
+}
+.reg{
+    position: relative;
+    font-family: Roboto ;
+    width: 100px;
+    text-align: center;
+}
+
+.form-control{
+    text-align: center;
+    border: none;
+    border-bottom: cadetblue 2px solid;
+    height: 18px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.form-control:hover{
+    border:none;
+    border-radius: 0;
+    border-bottom: red 2px solid;
+    transition: 250ms ease-in-out;
+}
+.form-control:focus{
+    outline: none !important;
+}
+.btn{
+    font-size: 18px;
+    background: white;
+    border: 1px cadetblue  solid;
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+}
+.btn:hover{
+    color: white;
+    border: none;
+    background: red;
+    transition: 250ms ease-in-out;
+}
+h6{
+    vertical-align: middle;
+}
+.auth{
+    width: 200px;
 }
